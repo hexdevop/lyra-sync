@@ -1,11 +1,64 @@
+# Secrets and local env
 .env
+.env.*
+!.env.example
+
+# IDE and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Python
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*.pyd
+*.so
+.python-version
 .pytest_cache/
-*.egg-info/
-dist/
-build/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+.tox/
+.nox/
+.pyre/
+.cache/
 .venv/
 venv/
+env/
+ENV/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Node / Vite
 node_modules/
+dist/
+build/
+coverage/
+.vite/
+vite.config.ts.timestamp-*
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Runtime artifacts
+*.log
+*.out
+*.err
+*.pid
+*.pid.lock
+*.seed
+
+# Local databases and dumps
+*.db
+*.sqlite
+*.sqlite3
+
+# Docker local override files
+docker-compose.override.yml
